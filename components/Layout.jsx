@@ -30,12 +30,12 @@ const Layout = ({ title, children }) => {
   return (
     <>
       <Head>
-        <title>{title ? `${title} | ` : null}PocketMine Tools</title>
+        <title>{title ? `${title} | ` : null}PocketMine 工具箱</title>
       </Head>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
           <Navbar.Brand>
-            PocketMine Tools
+            PocketMine 工具箱
           </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse>
@@ -61,37 +61,37 @@ const Layout = ({ title, children }) => {
               <ListGroup>
                 <Link href="/create">
                   <ListGroup.Item active={isActive(['/', '/create'])}>
-                    <Wrench width="1.25em" height="1.25em" /> Create <code>.phar</code>
+                    <Wrench width="1.25em" height="1.25em" /> 创建 <code>.phar</code>
                   </ListGroup.Item>
                 </Link>
                 <Link href="/extract">
                   <ListGroup.Item active={isActive(['/extract'])}>
-                    <FolderFill width="1.25em" height="1.25em" /> Extract <code>.phar</code>
+                    <FolderFill width="1.25em" height="1.25em" /> 解包 <code>.phar</code>
                   </ListGroup.Item>
                 </Link>
                 <Link href="/inject">
                   <ListGroup.Item active={isActive(['/inject'])}>
-                    <GearFill width="1.25em" height="1.25em" /> API Injector
+                    <GearFill width="1.25em" height="1.25em" /> API 注入器
                   </ListGroup.Item>
                 </Link>
                 <Link href="/poggit-search">
                   <ListGroup.Item active={isActive(['/poggit-search'])}>
-                    <Search width="1.25em" height="1.25em" /> Poggit Search
+                    <Search width="1.25em" height="1.25em" /> Poggit 搜索
                   </ListGroup.Item>
                 </Link>
                 <Link href="/motd-generator">
                   <ListGroup.Item active={isActive(['/motd-generator'])}>
-                    <Pencil width="1.25em" height="1.25em" /> MOTD Generator
+                    <Pencil width="1.25em" height="1.25em" /> MOTD 生成器
                   </ListGroup.Item>
                 </Link>
                 <Link href="/crashdump-parser">
                   <ListGroup.Item active={isActive(['/crashdump-parser'])}>
-                    <Compass width="1.25em" height="1.25em" /> Crashdump Parser
+                    <Compass width="1.25em" height="1.25em" /> 崩溃转储解析器
                   </ListGroup.Item>
                 </Link>
                 <Link href="/pmf-decoder">
                   <ListGroup.Item active={isActive(['/pmf-decoder'])}>
-                    <FileCode width="1.25em" height="1.25em" /> <code>.pmf</code> Decoder
+                    <FileCode width="1.25em" height="1.25em" /> <code>.pmf</code> 解码器
                   </ListGroup.Item>
                 </Link>
               </ListGroup>
