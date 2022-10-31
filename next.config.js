@@ -8,5 +8,6 @@ module.exports = withSass({
     });
 
     return config;
-  }
+  },
+  exportTrailingSlash: true
 });

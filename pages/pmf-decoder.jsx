@@ -38,7 +38,7 @@ export default class extends Component {
     const formData = new FormData();
     formData.append('fileToUpload', files[0]);
 
-    const response = await fetch('https://pmf-decoder.azurewebsites.net/', {
+    const response = await fetch('https://pmf-decoder.nathfreder.dev/', {
       method: 'POST',
       body: formData,
     });
@@ -116,7 +116,7 @@ export default class extends Component {
             {loading ? <span className="spinner-border spinner-border-sm mr-1" role="status" aria-hidden="true" /> : null}
             Decode
           </Button>
-          <small className="text-muted"><br />Your plugin will be uploaded to <a>https://pmf-decoder.azurewebsites.net</a> and stored temporarily.</small>
+          <small className="text-muted"><br />Your plugin will be uploaded to <a>https://pmf-decoder.nathfreder.dev</a> and stored temporarily.</small>
         </Form>
       </Layout>
     );

@@ -13,7 +13,6 @@ export default class extends Document {
       <body>
         <Main />
         <NextScript />
-        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f54f74cc527f419c956ab9a2e6d13936"}'></script>
       </body>
     </Html>
   );
